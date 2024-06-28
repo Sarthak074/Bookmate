@@ -1,4 +1,12 @@
+
+[build]
+command="npm run build"
+publish="./public"
+
+[build.environment]
+EJS_DEBUG=true
+
 [[build.process]]
   command = "ejs-render"
-  args=["src/.ejs","--output","public/"] 
+  args=["views/.ejs","--output","public/"] 
 
