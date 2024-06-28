@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Bookmate</title>
+</head>
+<body>
+    <div class="container">
+        <% for(let note of notes) {%>
+        <div class="viewNotes">
+            <h1 style="text-align: center;"><%= note.name %></h1>
+            <p><%= note.note %></p>
+        </div>
+        <% } %>
+    </div>
+</body>
+</html>

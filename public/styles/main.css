@@ -1,0 +1,114 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  gap: 10px;
+  background-color: rgb(104, 234, 104);
+  color: rgb(4, 144, 224);
+  margin-bottom: 20px;
+}
+
+img {
+  height: 100px;
+}
+
+.firstSec {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.functionality {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.bookTitle {
+  margin-top: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.rating {
+  margin-top: 5px;
+}
+
+button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 8px;
+  width: 80px;
+  border-radius: 20px;
+}
+
+.View {
+  background-color: rgb(95, 173, 241);
+  cursor: pointer;
+}
+
+.Update {
+  background-color: rgb(85, 223, 85);
+  cursor: pointer;
+}
+
+.Delete {
+  background-color: rgb(232, 44, 44);
+  cursor: pointer;
+}
+
+.Add {
+  background-color: yellow;
+  color: black;
+  margin-top: 25px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.forAdd {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(95, 173, 241);
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+  padding-top: 25px;
+}
+
+.addPara {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+input {
+  border: none;
+  border-radius: 20px;
+}
+
+.submit {
+  background-color: rgb(93, 218, 65);
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.viewNotes {
+  background-color: aquamarine;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 500px;
+}

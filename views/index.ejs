@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Bookmate</title>
+  </head>
+  <body>
+    <div class="logo">
+      <h1>Sarthak's Bookmate</h1>
+      <form action="/add" method="POST">
+        <button class="Add">ADD</button>
+      </form>
+    </div>
+    <% for(let note of noteItems ) {%>
+    <div class="firstSec">
+      <img
+        src="<%= note.src %>"
+        alt="Book cover for <%= note.name %>"
+      />
+      <h2 class="bookTitle"><%= note.name %></h2>
+      <p class="rating" style="color: rgb(255, 183, 0); font-weight: bolder">
+        Rating <%= note.ratings %>/10
+      </p>
+    </div>
+
+    <div class="functionality">
+      <form action="/view" method="POST">
+        <input type="hidden" name="id" value="<%= note.id %>" />
+        <button class="View" id="view">View</button>
+      </form>
+      <form action="/update" method="POST">
+        <input type="hidden" name="id" value="<%= note.id %>" />
+        <button class="Update" id="update">Update</button>
+      </form>
+      <form action="/delete" method="POST">
+        <input type="hidden" name="id" value="<%= note.id %>" />
+        <button class="Delete" id="delete">Delete</button>
+      </form>
+    </div>
+    <div style="display: flex; justify-content: center">
+      <hr
+        style="
+          width: 600px;
+          height: 2px;
+          background-color: rgb(0, 255, 119);
+          border: none;
+        "
+      />
+    </div>
+
+    <% } %>
+  </body>
+</html>
