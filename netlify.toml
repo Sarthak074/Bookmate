@@ -1,0 +1,4 @@
+[[build.process]]
+  command = "ejs-render"
+  args=["src/.ejs","--output","public/"] 
+
